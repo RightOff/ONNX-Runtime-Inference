@@ -6,19 +6,25 @@
 
 ## Dependencies
 
-* CMake 3.20.1
-* ONNX Runtime 1.12.0
-* OpenCV 4.5.2
+* ~~CMake 3.20.1~~
+* ~~ONNX Runtime 1.12.0~~
+* ~~OpenCV 4.5.2~~
+
+自己尝试成功的版本：
+
+* CMake 3.26.0
+* ONNX Runtime 1.12.1
+* OpenCV 4.2.0
 
 ## Usages
 
-### Build Docker Image
+### ~~Build Docker Image~~
 
 ```bash
 $ docker build -f docker/onnxruntime-cuda.Dockerfile --no-cache --tag=onnxruntime-cuda:1.12.0 .
 ```
 
-### Run Docker Container
+### ~~Run Docker Container~~
 
 ```bash
 $ docker run -it --rm --gpus device=0 -v $(pwd):/mnt onnxruntime-cuda:1.12.0
