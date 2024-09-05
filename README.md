@@ -24,6 +24,8 @@ $ docker build -f docker/onnxruntime-cuda.Dockerfile --no-cache --tag=onnxruntim
 $ docker run -it --rm --gpus device=0 -v $(pwd):/mnt onnxruntime-cuda:1.12.0
 ```
 
+可以不用docker，从下边开始
+
 ### Build Example
 
 ```bash
@@ -76,4 +78,5 @@ Minimum Inference Latency: 0.98 ms
 ## Models Download
 
 脸部分析和换脸模型下载可参考facefusion项目代码face_analyser.py和face_swapper.py
+
 * [facefusion](https://github.com/facefusion/facefusion/tree/master)
